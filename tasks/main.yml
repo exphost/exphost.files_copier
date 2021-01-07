@@ -1,9 +1,9 @@
 - name: debug
   debug:
     msg: "Jestem files copiere"
-- include_tasks: main_loop.yml
+
+- name: loop over files
+  include_tasks: main_loop.yml
   loop: "{{ files|dict2items }}"
   loop_control:
     loop_var: file
-- pause:
-

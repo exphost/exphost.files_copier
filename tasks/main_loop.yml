@@ -1,6 +1,7 @@
 - name: deb2
   debug:
     msg: "{{ file }}"
-- template:
+- name: copy file
+  template:
     src: "{{ FABSIBLE_CWD|default('..')+'/files/apps/'+file.value.src }}"
     dest: "{{ file.value.dest }}"

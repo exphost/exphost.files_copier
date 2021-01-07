@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  role_name: files_copie
+  role_name: files_copier
   author: TORGiren
   description: copy files to server
   company: exphost
