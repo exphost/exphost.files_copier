@@ -5,3 +5,4 @@
   template:
     src: "{{ FABSIBLE_CWD|default('..')+'/files/apps/'+file.value.src }}"
     dest: "{{ file.value.dest }}"
+  notify: "{{ notifiers|default([]) }}"
